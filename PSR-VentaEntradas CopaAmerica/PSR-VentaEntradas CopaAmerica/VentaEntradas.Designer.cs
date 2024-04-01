@@ -156,7 +156,7 @@
             this.btnEfectivo.Name = "btnEfectivo";
             this.btnEfectivo.Size = new System.Drawing.Size(200, 200);
             this.btnEfectivo.TabIndex = 11;
-            this.btnEfectivo.Text = "EFECTIVO";
+            this.btnEfectivo.Text = "EFECTIVO (50% OFF)";
             this.btnEfectivo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnEfectivo.UseVisualStyleBackColor = true;
             this.btnEfectivo.Click += new System.EventHandler(this.btnEfectivo_Click);
@@ -173,7 +173,7 @@
             this.btnMercadoPago.Name = "btnMercadoPago";
             this.btnMercadoPago.Size = new System.Drawing.Size(300, 200);
             this.btnMercadoPago.TabIndex = 12;
-            this.btnMercadoPago.Text = "MERCADO PAGO";
+            this.btnMercadoPago.Text = "MERCADO PAGO (25%OFF)";
             this.btnMercadoPago.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMercadoPago.UseVisualStyleBackColor = true;
             this.btnMercadoPago.Click += new System.EventHandler(this.btnMercadoPago_Click);

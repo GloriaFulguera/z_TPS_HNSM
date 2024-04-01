@@ -38,9 +38,14 @@ namespace PSR_VentaEntradas_CopaAmerica
                     Cliente cli = new Cliente(txbNombre.Text, txbApellido.Text, ckbMayorEdad.Checked, lblMedioSeleccionado.Text);
                     Debug.WriteLine("MAYOR DE EDAD: " + cli.MayorDeEdad);
                     ClienteDatos dbCli = new ClienteDatos();
-                    bool result=dbCli.Guardar(cli);
-                    if(result)
-                        MessageBox.Show("Cliente guardado con éxito", "", MessageBoxButtons.OK, MessageBoxIcon.None);
+                    /*bool result=dbCli.Guardar(cli);
+                    if (result)
+                    {*/
+                        MessageBox.Show("Cliente guardado con éxito", "Informacion de usuario", MessageBoxButtons.OK, MessageBoxIcon.None);
+                        Program.misClientes.Add(cli);
+                    //}
+                    limiarFormulario();
+
                 }
                 catch (Exception ex)
                 {
@@ -48,7 +53,13 @@ namespace PSR_VentaEntradas_CopaAmerica
                 }
             }
         }
-
+        public void limiarFormulario()
+        {
+            txbNombre.Clear();
+            txbApellido.Clear();
+            ckbMayorEdad.Checked = false;
+            lblMedioSeleccionado.Text = "NINGUNO";
+        }
         private void btnEfectivo_Click(object sender, EventArgs e)
         {
             lblMedioSeleccionado.Text = "EFECTIVO";
