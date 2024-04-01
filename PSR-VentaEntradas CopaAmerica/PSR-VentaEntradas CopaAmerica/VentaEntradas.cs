@@ -9,7 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.Data.SqlClient;
 
 namespace PSR_VentaEntradas_CopaAmerica
 {
@@ -19,11 +18,50 @@ namespace PSR_VentaEntradas_CopaAmerica
         {
             InitializeComponent();
         }
-        
+
         private void VentaEntradas_Load(object sender, EventArgs e)
         {
-            ConexionBD cone= new ConexionBD();
+            ConexionBD cone = new ConexionBD();
             cone.abrirConexion();
+        }
+
+        private void btnGrabar_Click(object sender, EventArgs e)
+        {
+            if (txbNombre.Text.Trim() == "" || txbApellido.Text.Trim() == "" || lblMedioSeleccionado.Text == "NINGUNO")
+            {
+                MessageBox.Show("DEBE COMPLETAR TODOS LOS CAMPOS Y SELECCIONAR UN MEDIO DE PAGO", "Faltan datos",MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                try
+                {
+                    Cliente cli = new Cliente(txbNombre.Text, txbApellido.Text, ckbMayorEdad.Checked, lblMedioSeleccionado.Text);
+                    Debug.WriteLine("MAYOR DE EDAD: " + cli.MayorDeEdad);
+                    ClienteDatos dbCli = new ClienteDatos();
+                    bool result=dbCli.Guardar(cli);
+                    if(result)
+                        MessageBox.Show("Cliente guardado con éxito", "", MessageBoxButtons.OK, MessageBoxIcon.None);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void btnEfectivo_Click(object sender, EventArgs e)
+        {
+            lblMedioSeleccionado.Text = "EFECTIVO";
+        }
+
+        private void btnMercadoPago_Click(object sender, EventArgs e)
+        {
+            lblMedioSeleccionado.Text = "MERCADO PAGO";
+        }
+
+        private void btnTarjetaCredito_Click(object sender, EventArgs e)
+        {
+            lblMedioSeleccionado.Text = "TARJETA DE CREDITO";
         }
     }
 }

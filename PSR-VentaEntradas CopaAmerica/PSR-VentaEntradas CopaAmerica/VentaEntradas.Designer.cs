@@ -159,6 +159,7 @@
             this.btnEfectivo.Text = "EFECTIVO";
             this.btnEfectivo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnEfectivo.UseVisualStyleBackColor = true;
+            this.btnEfectivo.Click += new System.EventHandler(this.btnEfectivo_Click);
             // 
             // btnMercadoPago
             // 
@@ -175,6 +176,7 @@
             this.btnMercadoPago.Text = "MERCADO PAGO";
             this.btnMercadoPago.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMercadoPago.UseVisualStyleBackColor = true;
+            this.btnMercadoPago.Click += new System.EventHandler(this.btnMercadoPago_Click);
             // 
             // btnTarjetaCredito
             // 
@@ -191,6 +193,7 @@
             this.btnTarjetaCredito.Text = "TARJETA DE CRÉDITO";
             this.btnTarjetaCredito.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnTarjetaCredito.UseVisualStyleBackColor = true;
+            this.btnTarjetaCredito.Click += new System.EventHandler(this.btnTarjetaCredito_Click);
             // 
             // btnGrabar
             // 
@@ -207,6 +210,7 @@
             this.btnGrabar.TabIndex = 14;
             this.btnGrabar.Text = "GRABAR";
             this.btnGrabar.UseVisualStyleBackColor = false;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // lblSel
             // 

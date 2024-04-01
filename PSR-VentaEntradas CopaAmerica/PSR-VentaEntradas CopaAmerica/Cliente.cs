@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PSR_VentaEntradas_CopaAmerica
 {
-    internal class Cliente
+    public class Cliente
     {
         private string _nombre;
         private string _apellido;
@@ -24,5 +24,21 @@ namespace PSR_VentaEntradas_CopaAmerica
             get { return _nombre; }
             set { _nombre = value; }
         }
+        public string Apellido
+        {
+            get { return _apellido; }
+            set { _apellido = value; }
+        }
+        public bool MayorDeEdad
+        {
+            get { return _mayorDeEdad; }
+            set { _mayorDeEdad = value; }
+        }
+        public string MedioDePago
+        {
+            get { return _medioDePago; }
+            set { _medioDePago = value; }
+        }
+
     }
 }
