@@ -247,6 +247,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VentaEntradas";
             this.Text = "VentaEntradas";
+            this.Load += new System.EventHandler(this.VentaEntradas_Load);
             this.pnlTitulo.ResumeLayout(false);
             this.pnlTitulo.PerformLayout();
             this.grbDatosPersonales.ResumeLayout(false);
