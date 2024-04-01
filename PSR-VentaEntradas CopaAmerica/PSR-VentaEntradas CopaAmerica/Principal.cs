@@ -36,7 +36,6 @@ namespace PSR_VentaEntradas_CopaAmerica
         {
 
         }
-
         private Form activo = null;
         private void openChildForm(Form childForm)
         {
