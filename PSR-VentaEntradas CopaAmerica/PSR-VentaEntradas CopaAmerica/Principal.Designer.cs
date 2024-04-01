@@ -71,6 +71,7 @@
             this.btnHistorialVentas.Text = "HISTORIAL";
             this.btnHistorialVentas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHistorialVentas.UseVisualStyleBackColor = true;
+            this.btnHistorialVentas.Click += new System.EventHandler(this.btnHistorialVentas_Click);
             // 
             // btnEnviarMail
             // 
@@ -88,6 +89,7 @@
             this.btnEnviarMail.Text = "ENVIAR MAIL";
             this.btnEnviarMail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEnviarMail.UseVisualStyleBackColor = true;
+            this.btnEnviarMail.Click += new System.EventHandler(this.btnEnviarMail_Click);
             // 
             // btnVenderEntrada
             // 
@@ -105,6 +107,7 @@
             this.btnVenderEntrada.Text = "VENDER ENTRADA";
             this.btnVenderEntrada.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVenderEntrada.UseVisualStyleBackColor = true;
+            this.btnVenderEntrada.Click += new System.EventHandler(this.btnVenderEntrada_Click);
             // 
             // lblLogo
             // 
@@ -152,6 +155,7 @@
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "COPA AMERICA BRASIL 2021";
+            this.Load += new System.EventHandler(this.Principal_Load);
             this.pnlMenu.ResumeLayout(false);
             this.pnlMenu.PerformLayout();
             this.pnlPantallas.ResumeLayout(false);
