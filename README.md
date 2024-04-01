@@ -1,2 +1,2 @@
 # z_psr_TP
-PSR Consignas de cursada pero con conocimientos actuales
+Consignas de distintas cursadas pero con conocimientos actuales (las iniciales indican la materia)
