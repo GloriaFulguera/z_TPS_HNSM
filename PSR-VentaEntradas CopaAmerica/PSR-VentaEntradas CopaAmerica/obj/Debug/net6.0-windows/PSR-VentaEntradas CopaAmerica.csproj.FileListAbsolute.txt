@@ -15,3 +15,23 @@ C:\Users\Glorupc\source\repos\PSR-VentaEntradas CopaAmerica\PSR-VentaEntradas Co
 C:\Users\Glorupc\source\repos\PSR-VentaEntradas CopaAmerica\PSR-VentaEntradas CopaAmerica\obj\Debug\net6.0-windows\PSR-VentaEntradas CopaAmerica.pdb
 C:\Users\Glorupc\source\repos\PSR-VentaEntradas CopaAmerica\PSR-VentaEntradas CopaAmerica\obj\Debug\net6.0-windows\PSR-VentaEntradas CopaAmerica.genruntimeconfig.cache
 C:\Users\Glorupc\source\repos\PSR-VentaEntradas CopaAmerica\PSR-VentaEntradas CopaAmerica\obj\Debug\net6.0-windows\ref\PSR-VentaEntradas CopaAmerica.dll
+C:\Users\Glorupc\source\repos\z_TPS_HNSM\PSR-VentaEntradas CopaAmerica\PSR-VentaEntradas CopaAmerica\bin\Debug\net6.0-windows\PSR-VentaEntradas CopaAmerica.exe
+C:\Users\Glorupc\source\repos\z_TPS_HNSM\PSR-VentaEntradas CopaAmerica\PSR-VentaEntradas CopaAmerica\bin\Debug\net6.0-windows\PSR-VentaEntradas CopaAmerica.deps.json
+C:\Users\Glorupc\source\repos\z_TPS_HNSM\PSR-VentaEntradas CopaAmerica\PSR-VentaEntradas CopaAmerica\bin\Debug\net6.0-windows\PSR-VentaEntradas CopaAmerica.runtimeconfig.json
+C:\Users\Glorupc\source\repos\z_TPS_HNSM\PSR-VentaEntradas CopaAmerica\PSR-VentaEntradas CopaAmerica\bin\Debug\net6.0-windows\PSR-VentaEntradas CopaAmerica.dll
+C:\Users\Glorupc\source\repos\z_TPS_HNSM\PSR-VentaEntradas CopaAmerica\PSR-VentaEntradas CopaAmerica\bin\Debug\net6.0-windows\PSR-VentaEntradas CopaAmerica.pdb
+C:\Users\Glorupc\source\repos\z_TPS_HNSM\PSR-VentaEntradas CopaAmerica\PSR-VentaEntradas CopaAmerica\obj\Debug\net6.0-windows\PSR-VentaEntradas CopaAmerica.csproj.AssemblyReference.cache
+C:\Users\Glorupc\source\repos\z_TPS_HNSM\PSR-VentaEntradas CopaAmerica\PSR-VentaEntradas CopaAmerica\obj\Debug\net6.0-windows\PSR_VentaEntradas_CopaAmerica.Principal.resources
+C:\Users\Glorupc\source\repos\z_TPS_HNSM\PSR-VentaEntradas CopaAmerica\PSR-VentaEntradas CopaAmerica\obj\Debug\net6.0-windows\PSR-VentaEntradas CopaAmerica.csproj.GenerateResource.cache
+C:\Users\Glorupc\source\repos\z_TPS_HNSM\PSR-VentaEntradas CopaAmerica\PSR-VentaEntradas CopaAmerica\obj\Debug\net6.0-windows\PSR-VentaEntradas CopaAmerica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Glorupc\source\repos\z_TPS_HNSM\PSR-VentaEntradas CopaAmerica\PSR-VentaEntradas CopaAmerica\obj\Debug\net6.0-windows\PSR-VentaEntradas CopaAmerica.AssemblyInfoInputs.cache
+C:\Users\Glorupc\source\repos\z_TPS_HNSM\PSR-VentaEntradas CopaAmerica\PSR-VentaEntradas CopaAmerica\obj\Debug\net6.0-windows\PSR-VentaEntradas CopaAmerica.AssemblyInfo.cs
+C:\Users\Glorupc\source\repos\z_TPS_HNSM\PSR-VentaEntradas CopaAmerica\PSR-VentaEntradas CopaAmerica\obj\Debug\net6.0-windows\PSR-VentaEntradas CopaAmerica.csproj.CoreCompileInputs.cache
+C:\Users\Glorupc\source\repos\z_TPS_HNSM\PSR-VentaEntradas CopaAmerica\PSR-VentaEntradas CopaAmerica\obj\Debug\net6.0-windows\PSR-VentaEntradas CopaAmerica.dll
+C:\Users\Glorupc\source\repos\z_TPS_HNSM\PSR-VentaEntradas CopaAmerica\PSR-VentaEntradas CopaAmerica\obj\Debug\net6.0-windows\refint\PSR-VentaEntradas CopaAmerica.dll
+C:\Users\Glorupc\source\repos\z_TPS_HNSM\PSR-VentaEntradas CopaAmerica\PSR-VentaEntradas CopaAmerica\obj\Debug\net6.0-windows\PSR-VentaEntradas CopaAmerica.pdb
+C:\Users\Glorupc\source\repos\z_TPS_HNSM\PSR-VentaEntradas CopaAmerica\PSR-VentaEntradas CopaAmerica\obj\Debug\net6.0-windows\PSR-VentaEntradas CopaAmerica.genruntimeconfig.cache
+C:\Users\Glorupc\source\repos\z_TPS_HNSM\PSR-VentaEntradas CopaAmerica\PSR-VentaEntradas CopaAmerica\obj\Debug\net6.0-windows\ref\PSR-VentaEntradas CopaAmerica.dll
+C:\Users\Glorupc\source\repos\z_TPS_HNSM\PSR-VentaEntradas CopaAmerica\PSR-VentaEntradas CopaAmerica\obj\Debug\net6.0-windows\PSR_VentaEntradas_CopaAmerica.VentaEntradas.resources
+C:\Users\Glorupc\source\repos\z_TPS_HNSM\PSR-VentaEntradas CopaAmerica\PSR-VentaEntradas CopaAmerica\obj\Debug\net6.0-windows\PSR_VentaEntradas_CopaAmerica.Properties.Resources.resources
+C:\Users\Glorupc\source\repos\z_TPS_HNSM\PSR-VentaEntradas CopaAmerica\PSR-VentaEntradas CopaAmerica\obj\Debug\net6.0-windows\PSR_VentaEntradas_CopaAmerica.EnvioMail.resources
