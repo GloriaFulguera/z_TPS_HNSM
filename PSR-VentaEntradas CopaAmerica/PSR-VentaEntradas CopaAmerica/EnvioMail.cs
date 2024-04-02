@@ -25,8 +25,15 @@ namespace PSR_VentaEntradas_CopaAmerica
             }
             else
             {
+                //para quitar todos los Labels que creamos 
+                foreach (Control item in pnlBodyTable.Controls.OfType<Label>().ToList())
+                {
+                    pnlBodyTable.Controls.Remove(item);
+                }
+                //limia la lista temporal para nuevo ingreso
                 Program.misClientes.Clear();
                 txbCorreo.Text= string.Empty;
+
                 MessageBox.Show("Mensaje enviado con éxito", "Informacion de usuario", MessageBoxButtons.OK, MessageBoxIcon.None);
             }
         }

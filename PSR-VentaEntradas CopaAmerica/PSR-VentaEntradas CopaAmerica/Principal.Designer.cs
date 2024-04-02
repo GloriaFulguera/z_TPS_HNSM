@@ -179,6 +179,7 @@
             this.ClientSize = new System.Drawing.Size(1184, 761);
             this.Controls.Add(this.pnlPantallas);
             this.Controls.Add(this.pnlMenu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1200, 800);
             this.MinimumSize = new System.Drawing.Size(1200, 800);
