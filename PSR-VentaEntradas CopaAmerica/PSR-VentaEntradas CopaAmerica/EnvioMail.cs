@@ -21,7 +21,7 @@ namespace PSR_VentaEntradas_CopaAmerica
         {
             if (txbCorreo.Text.Trim() == "")
             {
-                MessageBox.Show("DEBE COMPLETAR TODOS EL CAMPO CORREO ELECTRONICO", "Faltan datos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("DEBE COMPLETAR EL CAMPO CORREO ELECTRONICO", "Faltan datos", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
