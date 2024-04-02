@@ -36,16 +36,16 @@
             this.lblDetEnvio = new System.Windows.Forms.Label();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.pnlDetEnvio = new System.Windows.Forms.Panel();
-            this.lsbDetalleMail = new System.Windows.Forms.ListBox();
-            this.pnlTH = new System.Windows.Forms.Panel();
-            this.lblValFinal = new System.Windows.Forms.Label();
-            this.lblMetDePago = new System.Windows.Forms.Label();
-            this.lblEsMayor = new System.Windows.Forms.Label();
-            this.lblNomyAp = new System.Windows.Forms.Label();
-            this.lblNro = new System.Windows.Forms.Label();
+            this.pnlBodyTable = new System.Windows.Forms.Panel();
+            this.pnlHeaderTable = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblTh1 = new System.Windows.Forms.Label();
             this.pnlTitulo.SuspendLayout();
             this.pnlDetEnvio.SuspendLayout();
-            this.pnlTH.SuspendLayout();
+            this.pnlHeaderTable.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitulo
@@ -129,103 +129,98 @@
             // 
             // pnlDetEnvio
             // 
-            this.pnlDetEnvio.BackColor = System.Drawing.Color.White;
-            this.pnlDetEnvio.Controls.Add(this.lsbDetalleMail);
-            this.pnlDetEnvio.Controls.Add(this.pnlTH);
+            this.pnlDetEnvio.AutoScroll = true;
+            this.pnlDetEnvio.BackColor = System.Drawing.SystemColors.Control;
+            this.pnlDetEnvio.Controls.Add(this.pnlBodyTable);
+            this.pnlDetEnvio.Controls.Add(this.pnlHeaderTable);
             this.pnlDetEnvio.Location = new System.Drawing.Point(76, 272);
             this.pnlDetEnvio.Name = "pnlDetEnvio";
             this.pnlDetEnvio.Size = new System.Drawing.Size(721, 327);
             this.pnlDetEnvio.TabIndex = 16;
             // 
-            // lsbDetalleMail
+            // pnlBodyTable
             // 
-            this.lsbDetalleMail.BackColor = System.Drawing.SystemColors.Info;
-            this.lsbDetalleMail.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lsbDetalleMail.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lsbDetalleMail.FormattingEnabled = true;
-            this.lsbDetalleMail.ItemHeight = 19;
-            this.lsbDetalleMail.Location = new System.Drawing.Point(0, 37);
-            this.lsbDetalleMail.Name = "lsbDetalleMail";
-            this.lsbDetalleMail.Size = new System.Drawing.Size(721, 290);
-            this.lsbDetalleMail.TabIndex = 1;
+            this.pnlBodyTable.AutoScroll = true;
+            this.pnlBodyTable.BackColor = System.Drawing.Color.LightGray;
+            this.pnlBodyTable.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlBodyTable.Location = new System.Drawing.Point(0, 47);
+            this.pnlBodyTable.Name = "pnlBodyTable";
+            this.pnlBodyTable.Size = new System.Drawing.Size(721, 280);
+            this.pnlBodyTable.TabIndex = 1;
             // 
-            // pnlTH
+            // pnlHeaderTable
             // 
-            this.pnlTH.Controls.Add(this.lblValFinal);
-            this.pnlTH.Controls.Add(this.lblMetDePago);
-            this.pnlTH.Controls.Add(this.lblEsMayor);
-            this.pnlTH.Controls.Add(this.lblNomyAp);
-            this.pnlTH.Controls.Add(this.lblNro);
-            this.pnlTH.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTH.Location = new System.Drawing.Point(0, 0);
-            this.pnlTH.Name = "pnlTH";
-            this.pnlTH.Size = new System.Drawing.Size(721, 37);
-            this.pnlTH.TabIndex = 0;
+            this.pnlHeaderTable.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnlHeaderTable.Controls.Add(this.label4);
+            this.pnlHeaderTable.Controls.Add(this.label3);
+            this.pnlHeaderTable.Controls.Add(this.label2);
+            this.pnlHeaderTable.Controls.Add(this.label1);
+            this.pnlHeaderTable.Controls.Add(this.lblTh1);
+            this.pnlHeaderTable.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlHeaderTable.Location = new System.Drawing.Point(0, 0);
+            this.pnlHeaderTable.Name = "pnlHeaderTable";
+            this.pnlHeaderTable.Size = new System.Drawing.Size(721, 47);
+            this.pnlHeaderTable.TabIndex = 0;
             // 
-            // lblValFinal
+            // label4
             // 
-            this.lblValFinal.AutoSize = true;
-            this.lblValFinal.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblValFinal.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblValFinal.Location = new System.Drawing.Point(524, 0);
-            this.lblValFinal.Name = "lblValFinal";
-            this.lblValFinal.Padding = new System.Windows.Forms.Padding(30, 5, 0, 0);
-            this.lblValFinal.Size = new System.Drawing.Size(133, 24);
-            this.lblValFinal.TabIndex = 18;
-            this.lblValFinal.Text = "VALOR FINAL";
-            this.lblValFinal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label4.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(570, 0);
+            this.label4.Name = "label4";
+            this.label4.Padding = new System.Windows.Forms.Padding(20, 15, 50, 10);
+            this.label4.Size = new System.Drawing.Size(158, 44);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Valor Final";
             // 
-            // lblMetDePago
+            // label3
             // 
-            this.lblMetDePago.AutoSize = true;
-            this.lblMetDePago.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblMetDePago.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblMetDePago.Location = new System.Drawing.Point(367, 0);
-            this.lblMetDePago.Name = "lblMetDePago";
-            this.lblMetDePago.Padding = new System.Windows.Forms.Padding(10, 5, 10, 0);
-            this.lblMetDePago.Size = new System.Drawing.Size(157, 24);
-            this.lblMetDePago.TabIndex = 18;
-            this.lblMetDePago.Text = "METODO DE PAGO";
-            this.lblMetDePago.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.AutoSize = true;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label3.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(444, 0);
+            this.label3.Name = "label3";
+            this.label3.Padding = new System.Windows.Forms.Padding(30, 15, 50, 10);
+            this.label3.Size = new System.Drawing.Size(126, 44);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Pago";
             // 
-            // lblEsMayor
+            // label2
             // 
-            this.lblEsMayor.AutoSize = true;
-            this.lblEsMayor.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblEsMayor.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblEsMayor.Location = new System.Drawing.Point(271, 0);
-            this.lblEsMayor.Name = "lblEsMayor";
-            this.lblEsMayor.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.lblEsMayor.Size = new System.Drawing.Size(96, 24);
-            this.lblEsMayor.TabIndex = 17;
-            this.lblEsMayor.Text = "¿ES MAYOR?";
-            this.lblEsMayor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(290, 0);
+            this.label2.Name = "label2";
+            this.label2.Padding = new System.Windows.Forms.Padding(0, 15, 0, 10);
+            this.label2.Size = new System.Drawing.Size(154, 44);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "¿Es mayor de edad?";
             // 
-            // lblNomyAp
+            // label1
             // 
-            this.lblNomyAp.AutoSize = true;
-            this.lblNomyAp.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblNomyAp.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNomyAp.Location = new System.Drawing.Point(60, 0);
-            this.lblNomyAp.Name = "lblNomyAp";
-            this.lblNomyAp.Padding = new System.Windows.Forms.Padding(10, 5, 40, 0);
-            this.lblNomyAp.Size = new System.Drawing.Size(211, 24);
-            this.lblNomyAp.TabIndex = 17;
-            this.lblNomyAp.Text = "NOMBRE Y APELLIDO";
-            this.lblNomyAp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(56, 0);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(20, 15, 70, 10);
+            this.label1.Size = new System.Drawing.Size(234, 44);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Nombre y Apellido";
             // 
-            // lblNro
+            // lblTh1
             // 
-            this.lblNro.AutoSize = true;
-            this.lblNro.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblNro.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNro.Location = new System.Drawing.Point(0, 0);
-            this.lblNro.Name = "lblNro";
-            this.lblNro.Padding = new System.Windows.Forms.Padding(10, 5, 10, 0);
-            this.lblNro.Size = new System.Drawing.Size(60, 24);
-            this.lblNro.TabIndex = 0;
-            this.lblNro.Text = "NRO";
-            this.lblNro.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTh1.AutoSize = true;
+            this.lblTh1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblTh1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTh1.Location = new System.Drawing.Point(0, 0);
+            this.lblTh1.Name = "lblTh1";
+            this.lblTh1.Padding = new System.Windows.Forms.Padding(20, 15, 0, 10);
+            this.lblTh1.Size = new System.Drawing.Size(56, 44);
+            this.lblTh1.TabIndex = 0;
+            this.lblTh1.Text = "Nro";
             // 
             // EnvioMail
             // 
@@ -247,8 +242,8 @@
             this.pnlTitulo.ResumeLayout(false);
             this.pnlTitulo.PerformLayout();
             this.pnlDetEnvio.ResumeLayout(false);
-            this.pnlTH.ResumeLayout(false);
-            this.pnlTH.PerformLayout();
+            this.pnlHeaderTable.ResumeLayout(false);
+            this.pnlHeaderTable.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -264,12 +259,12 @@
         private Label lblDetEnvio;
         private Button btnEnviar;
         private Panel pnlDetEnvio;
-        private Panel pnlTH;
-        private Label lblValFinal;
-        private Label lblMetDePago;
-        private Label lblEsMayor;
-        private Label lblNomyAp;
-        private Label lblNro;
-        private ListBox lsbDetalleMail;
+        private Panel pnlBodyTable;
+        private Panel pnlHeaderTable;
+        private Label label4;
+        private Label label3;
+        private Label label2;
+        private Label label1;
+        private Label lblTh1;
     }
 }

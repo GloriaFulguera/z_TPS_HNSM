@@ -36,7 +36,7 @@ namespace PSR_VentaEntradas_CopaAmerica
 
         private void btnHistorialVentas_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new Historial());
         }
         private Form activo = null;
         private void openChildForm(Form childForm)

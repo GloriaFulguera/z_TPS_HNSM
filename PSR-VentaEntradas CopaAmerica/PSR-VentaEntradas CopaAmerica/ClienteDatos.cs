@@ -42,14 +42,51 @@ namespace PSR_VentaEntradas_CopaAmerica
 
             return rta;
         }
+
+        public List<Cliente> ObtenerClientes()
+        {
+            List<Cliente> oLista= new List<Cliente>();
+            try
+            {
+                ConexionBD cn= new ConexionBD();
+                cn.abrirConexion();
+
+                SqlCommand cmd=new SqlCommand("sp_ObtenerClientes",cn.conexion);
+                cmd.CommandType=System.Data.CommandType.StoredProcedure;
+                using(var dr=cmd.ExecuteReader())
+                {
+                    while (dr.Read())
+                    {
+                        var nombre = dr["Nombre"].ToString();
+                        var apellido = dr["Apellido"].ToString();
+                        var mayor = (Convert.ToChar(dr["MayorDeEdad"]) == '1') ? true : false;
+                        var medioPago= dr["MedioDePago"].ToString();
+
+                        oLista.Add(new Cliente(nombre,apellido,mayor,medioPago));
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+            return oLista;
+        }
     }
 }
 /*
- conexion.Open();
-                    SqlCommand cmd = new SqlCommand("sp_Guardar", conexion);
-                    cmd.Parameters.AddWithValue("Nombre", oContacto.Nombre);
-                    cmd.Parameters.AddWithValue("Telefono", oContacto.Telefono);
-                    cmd.Parameters.AddWithValue("Email", oContacto.Email);
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.ExecuteNonQuery();
+ using (var dr = cmd.ExecuteReader())
+                {
+                    while (dr.Read())
+                    {
+                        oLista.Add(new ContactoModel()
+                        {
+                            idContacto = Convert.ToInt32(dr["idContacto"]),
+                            Nombre = dr["Nombre"].ToString(),
+                            Telefono = dr["Telefono"].ToString(),
+                            Email = dr["Email"].ToString()
+                        });
+                    }
+                }
  */

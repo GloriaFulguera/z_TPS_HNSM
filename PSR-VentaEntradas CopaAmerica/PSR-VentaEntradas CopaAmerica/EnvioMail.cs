@@ -26,7 +26,6 @@ namespace PSR_VentaEntradas_CopaAmerica
             else
             {
                 Program.misClientes.Clear();
-                lsbDetalleMail.Items.Clear();
                 txbCorreo.Text= string.Empty;
                 MessageBox.Show("Mensaje enviado con éxito", "Informacion de usuario", MessageBoxButtons.OK, MessageBoxIcon.None);
             }
@@ -56,10 +55,23 @@ namespace PSR_VentaEntradas_CopaAmerica
             {
                 
                 string mayor = cli.MayorDeEdad ? "SI" : "NO";
-                string detEntrada = "     " + i.ToString() + ".          " + cli.Nombre + "   " + cli.Apellido + " -    " + mayor + " -    " + cli.MedioDePago + "    -      $ " + valorFinal(cli.MedioDePago);
-                lsbDetalleMail.Items.Add(detEntrada);
+                string detVentaUnit = "       " + i.ToString() + ".          " + cli.Nombre + "   " + cli.Apellido + " -    " + mayor + " -    " + cli.MedioDePago + "    -      $ " + valorFinal(cli.MedioDePago);
+                crearRegistro(detVentaUnit);
                 i++;
             }
+        }
+        public void crearRegistro(string contenido)
+        {
+            Label lbl = new Label();
+            lbl.Text = contenido;
+            lbl.Font = new Font("Bahnschrift", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl.Padding = new Padding(0, 12, 0, 12);
+            //lbl.AutoSize = true;
+            lbl.Dock = DockStyle.Top;
+            lbl.Size = new Size(721, 45);
+            lbl.BorderStyle= BorderStyle.FixedSingle;
+
+            pnlBodyTable.Controls.Add(lbl);
         }
     }
 }

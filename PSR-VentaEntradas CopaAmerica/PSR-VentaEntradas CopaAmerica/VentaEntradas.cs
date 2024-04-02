@@ -38,12 +38,12 @@ namespace PSR_VentaEntradas_CopaAmerica
                     Cliente cli = new Cliente(txbNombre.Text, txbApellido.Text, ckbMayorEdad.Checked, lblMedioSeleccionado.Text);
                     Debug.WriteLine("MAYOR DE EDAD: " + cli.MayorDeEdad);
                     ClienteDatos dbCli = new ClienteDatos();
-                    /*bool result=dbCli.Guardar(cli);
+                    bool result=dbCli.Guardar(cli);
                     if (result)
-                    {*/
+                    {
                         MessageBox.Show("Cliente guardado con éxito", "Informacion de usuario", MessageBoxButtons.OK, MessageBoxIcon.None);
                         Program.misClientes.Add(cli);
-                    //}
+                    }
                     limiarFormulario();
 
                 }
