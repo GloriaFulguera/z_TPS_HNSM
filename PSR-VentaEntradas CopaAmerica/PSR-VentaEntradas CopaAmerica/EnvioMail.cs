@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -23,8 +26,43 @@ namespace PSR_VentaEntradas_CopaAmerica
             {
                 MessageBox.Show("DEBE COMPLETAR EL CAMPO CORREO ELECTRONICO", "Faltan datos", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            else if(!txbCorreo.Text.Trim().Contains("@gmail.com"))
+            {
+                MessageBox.Show("DIRECCION DE CORREO INVALIDO", "Informacion incorrecta", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             else
             {
+                #region ENVIAR MAIL FUNCIONAL
+
+                MailMessage email = new MailMessage();
+                email.To.Add(new MailAddress(txbCorreo.Text.Trim()));
+                email.From = new MailAddress("gfulguera@netval.com.ar");
+                email.Subject = "PSR - ENTRADAS VENDIDAS";
+                email.Body = DateTime.Now.ToString("dd / MMM / yyy hh: mm:ss")+"<br><p><b>Cantidad de entradas vendidas: " +Program.misClientes.Count+"</b></p><br>"+detalleMsjMail();
+                email.IsBodyHtml = true;
+                email.Priority = MailPriority.Normal;
+
+                SmtpClient smtp = new SmtpClient("smtp.hostinger.com", 587);
+                //smtp.Host = "gmail.com";
+                //smtp.Port = 465; // verificar el puerto
+                smtp.EnableSsl = false;
+                smtp.UseDefaultCredentials = false;
+                smtp.Credentials = new NetworkCredential("gfulguera@netval.com.ar", "Fulguera@2023");
+                string output = null;
+
+                try
+                {
+                    smtp.Send(email);
+                    email.Dispose();
+                    output = "Corre electrónico fue enviado satisfactoriamente.";
+                }
+                catch (Exception ex)
+                {
+                    output = "Error enviando correo electrónico: " + ex.Message;
+                }
+                Debug.WriteLine(output);
+                #endregion
+
                 //para quitar todos los Labels que creamos 
                 foreach (Control item in pnlBodyTable.Controls.OfType<Label>().ToList())
                 {
@@ -79,6 +117,19 @@ namespace PSR_VentaEntradas_CopaAmerica
             lbl.BorderStyle= BorderStyle.FixedSingle;
 
             pnlBodyTable.Controls.Add(lbl);
+        }
+        public string detalleMsjMail()
+        {
+            string detalle="<p>";
+            int i = 1;
+            foreach(var item in Program.misClientes)
+            {
+                string mayor = item.MayorDeEdad ? "SI" : "NO";
+                detalle += i + ". " + item.Nombre + " " +item.Apellido+" - "+mayor+" - "+item.MedioDePago+" - $"+valorFinal(item.MedioDePago)+"<br>";
+                i++;
+            }
+            detalle += "</p>";
+            return detalle;
         }
     }
 }
