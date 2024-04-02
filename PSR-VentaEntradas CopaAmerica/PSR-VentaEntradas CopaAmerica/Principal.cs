@@ -23,21 +23,6 @@ namespace PSR_VentaEntradas_CopaAmerica
 
         }
 
-        private void btnVenderEntrada_Click(object sender, EventArgs e)
-        {
-            openChildForm(new VentaEntradas());
-            
-        }
-
-        private void btnEnviarMail_Click(object sender, EventArgs e)
-        {
-            openChildForm(new EnvioMail());
-        }
-
-        private void btnHistorialVentas_Click(object sender, EventArgs e)
-        {
-            openChildForm(new Historial());
-        }
         private Form activo = null;
         private void openChildForm(Form childForm)
         {
@@ -53,6 +38,26 @@ namespace PSR_VentaEntradas_CopaAmerica
             pnlPantallas.Tag= childForm;
             childForm.BringToFront();
             childForm.Show();
+        }
+
+        private void lblLogo_Click(object sender, EventArgs e)
+        {
+            activo.Close();
+        }
+
+        private void btnVenderEntrada_Click(object sender, EventArgs e)
+        {
+            openChildForm(new VentaEntradas());
+        }
+
+        private void btnEnviarMail_Click(object sender, EventArgs e)
+        {
+            openChildForm(new EnvioMail());
+        }
+
+        private void btnHistorialVentas_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Historial());
         }
     }
 }
